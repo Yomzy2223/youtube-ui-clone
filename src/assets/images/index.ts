@@ -8,7 +8,17 @@ import SubAvatarImg6 from "./avatar/sub-avatar-6.png";
 import SubAvatarImg7 from "./avatar/sub-avatar-7.png";
 import YoutubeLogo from "./youtube-logo.png";
 
+import ThumbnailDiscord from "./thumbnails/thumbnail-discord.png";
+import ThumbnailInstagram from "./thumbnails/thumbnail-instagram.png";
+import ThumbnailNetflix from "./thumbnails/thumbnail-netflix.png";
+import ThumbnailSpotify from "./thumbnails/thumbnail-spotify.png";
+import ThumbnailTesla from "./thumbnails/thumbnail-tesla.png";
+import ThumbnailTiktok from "./thumbnails/thumbnail-tiktok.png";
+import ThumbnailTwitter from "./thumbnails/thumbnail-twitter.png";
+import ThumbnailYouTube from "./thumbnails/thumbnail-youtube.png";
+
 export {
+  // AVATAR
   UserAvatar,
   SubAvatarImg1,
   SubAvatarImg2,
@@ -18,4 +28,14 @@ export {
   SubAvatarImg6,
   SubAvatarImg7,
   YoutubeLogo,
+
+  // THUMBNAILS
+  ThumbnailDiscord,
+  ThumbnailInstagram,
+  ThumbnailNetflix,
+  ThumbnailSpotify,
+  ThumbnailTesla,
+  ThumbnailTiktok,
+  ThumbnailTwitter,
+  ThumbnailYouTube,
 };

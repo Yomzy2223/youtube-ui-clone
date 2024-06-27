@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import DesktopHeader from "./desktopHeader";
 import MobileHeader from "./mobileHeader";

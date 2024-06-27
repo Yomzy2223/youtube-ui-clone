@@ -23,12 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(roboto.className, "max-w-[100vw] overflow-hidden")}>
+      <body className={cn(roboto.className, "max-w-[100vw] overflow-x-hidden")}>
         <AppHeader />
         {/* <div className="grid grid-flow-col"> */}
-        <div className="flex">
+        <div className="flex sticky top-0 max-h-[calc(100vh-56px)] overflow-auto scrollbar-hidden">
           <Sidebar />
-          <div className="overflow-hidden">{children}</div>
+          <div className="overflow-x-hidden scrollbar-hidden">{children}</div>
         </div>
       </body>
     </html>

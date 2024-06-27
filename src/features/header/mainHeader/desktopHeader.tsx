@@ -10,10 +10,23 @@ import { UserAvatar, YoutubeLogo } from "@/assets/images";
 import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useDeleteQuery, useSetQuery } from "@/hooks/queryHooks";
 import Image from "next/image";
-import React from "react";
+import { useSearchParams } from "next/navigation";
+import React, { ChangeEvent } from "react";
 
 const DesktopHeader = () => {
+  const setQuery = useSetQuery();
+  const deleteQuery = useDeleteQuery();
+
+  const searchParams = useSearchParams();
+  const searchValue = searchParams.get("search") || "";
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    value ? setQuery("search", value) : deleteQuery("search");
+  };
+
   return (
     <div className="hidden md:flex flex-1 justify-between items-center px-6">
       <div className="flex">
@@ -34,7 +47,12 @@ const DesktopHeader = () => {
       </div>
 
       <div className="flex">
-        <Input placeholder="Search..." className="peer w-80" />
+        <Input
+          placeholder="Search..."
+          className="peer w-80"
+          value={searchValue}
+          onChange={handleChange}
+        />
         <Button className="px-5 py-2 mr-1 rounded-none bg-accent">
           <Image
             src={SearchIcon}
