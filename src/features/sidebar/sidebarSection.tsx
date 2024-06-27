@@ -27,7 +27,9 @@ const SidebarSection = ({
 
       {itemsList.slice(0, show).map((item, i) => {
         const pathActive =
-          pathname === "/" && i === 0 ? true : pathname.includes(item.href);
+          pathname === "/" && item.default
+            ? true
+            : pathname.includes(item.href);
 
         return (
           <Link

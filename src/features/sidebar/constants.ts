@@ -44,6 +44,7 @@ const sidebarSection1: TSidebarSectionProps = {
       text: "Home",
       imgSrc: [HomeIcon, HomeFillIcon],
       href: "/home",
+      default: true,
     },
     {
       text: "Explore",
