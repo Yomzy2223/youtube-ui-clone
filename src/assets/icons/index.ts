@@ -42,6 +42,7 @@ import SubscriptionsIcon from "./subscriptions.svg";
 import WatchLaterFillIcon from "./watch-later-fill.svg";
 import WatchLaterIcon from "./watch-later.svg";
 import YourVideosIcon from "./your-videos.svg";
+import InfoIcon from "./info.svg";
 
 export {
   AppsIcon,
@@ -88,4 +89,5 @@ export {
   WatchLaterFillIcon,
   WatchLaterIcon,
   YourVideosIcon,
+  InfoIcon,
 };

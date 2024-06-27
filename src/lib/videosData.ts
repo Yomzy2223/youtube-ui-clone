@@ -14,8 +14,19 @@ import {
   ThumbnailTwitter,
   ThumbnailYouTube,
 } from "@/assets/images";
+import { StaticImageData } from "next/image";
 
-export const videosData = [
+export type TVideoData = {
+  thumbnail: StaticImageData;
+  duration: string;
+  avatar: StaticImageData;
+  title: string;
+  fullName: string;
+  views: string;
+  posted: string;
+};
+
+export const videosData: TVideoData[] = [
   {
     thumbnail: ThumbnailYouTube,
     duration: "12:07",
@@ -37,6 +48,7 @@ export const videosData = [
   {
     thumbnail: ThumbnailTiktok,
     duration: "45:22",
+    avatar: SubAvatarImg3,
     title: "Explore the beauty of Paris in this travel vlog",
     fullName: "Jane Doe",
     views: "780 views",
@@ -208,6 +220,7 @@ export const videosData = [
   {
     thumbnail: ThumbnailYouTube,
     duration: "35:47",
+    avatar: SubAvatarImg1,
     title: "Embark on a virtual travel vlog through Tokyo",
     fullName: "Wanderlust",
     views: "1.7k views",
