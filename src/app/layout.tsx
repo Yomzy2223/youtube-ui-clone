@@ -1,5 +1,6 @@
-import AppHeader from "@/features/header";
+import AppHeader from "@/features/header/mainHeader";
 import Sidebar from "@/features/sidebar";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
@@ -22,11 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={cn(roboto.className, "max-w-[100vw] overflow-hidden")}>
         <AppHeader />
+        {/* <div className="grid grid-flow-col"> */}
         <div className="flex">
           <Sidebar />
-          {children}
+          <div className="overflow-hidden">{children}</div>
         </div>
       </body>
     </html>

@@ -15,8 +15,8 @@ const MobileNav = ({ itemsList }: { itemsList: TSidebarItem[] }) => {
 
         return (
           <Link
-            href={item.href}
             key={item.text}
+            href={item.href}
             className="flex flex-col items-center justify-between flex-1 p-2 transition-all"
           >
             <Image

@@ -1,7 +1,7 @@
-import React from "react";
+import { redirect } from "next/navigation";
 
 const Home = () => {
-  return <div className="bg-primary">Home</div>;
+  redirect("/home");
 };
 
 export default Home;

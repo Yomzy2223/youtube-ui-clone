@@ -19,9 +19,10 @@ const Sidebar = () => {
       <MobileNav itemsList={mobileSidebarItems} />
 
       {/*DESKTOP SIDEBAR */}
-      <div className="hidden md:block w-64 bg-background-2 max-h-[calc(100vh-56px)] overflow-auto scrollbar-hidden transition-all">
-        {sidebarItems.map((section) => (
+      <div className="hidden md:block w-64 bg-background-3 max-h-[calc(100vh-56px)] overflow-auto scrollbar-hidden shrink-0">
+        {sidebarItems.map((section, i) => (
           <SidebarSection
+            key={i}
             title={section.title}
             itemsList={section.itemsList}
             defaultShow={section.defaultShow}
@@ -29,10 +30,11 @@ const Sidebar = () => {
         ))}
 
         <div className="flex flex-col gap-4 py-4 px-6 mb-10">
-          {sidbarFooterLinks.map((section) => (
-            <div className="flex flex-wrap gap-2">
+          {sidbarFooterLinks.map((section, i) => (
+            <div key={i} className="flex flex-wrap gap-2">
               {section.map((link) => (
                 <Link
+                  key={link.text}
                   href={link.url}
                   className={cn(
                     buttonVariants({ variant: "ghost2", size: "fit" }),

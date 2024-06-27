@@ -18,7 +18,7 @@ const SidebarSection = ({
   const pathname = usePathname();
 
   return (
-    <div className="py-3 border-b border-border bg-background-2 transition-all mr-2">
+    <div className="py-3 border-b border-border bg-background-3 transition-all mr-2">
       {title && (
         <h3 className="text-accent-foreground px-6 py-2 uppercase text-sm font-bold">
           {title}
@@ -33,8 +33,8 @@ const SidebarSection = ({
 
         return (
           <Link
+            key={item.text + item.href}
             href={item.href}
-            key={item.text}
             className={cn("flex items-center gap-6 p-2 pl-6 transition-all", {
               "bg-muted": pathActive,
             })}
