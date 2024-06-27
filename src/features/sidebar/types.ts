@@ -9,3 +9,8 @@ export type TSidebarSectionProps = {
   itemsList: TSidebarItem[];
   defaultShow?: number;
 };
+
+export type TSidebarFooter = {
+  text: string;
+  url: string;
+};

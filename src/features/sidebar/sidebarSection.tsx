@@ -18,7 +18,7 @@ const SidebarSection = ({
   const pathname = usePathname();
 
   return (
-    <div className="py-3 border-b border-border bg-background-2 transition-all">
+    <div className="py-3 border-b border-border bg-background-2 transition-all mr-2">
       {title && (
         <h3 className="text-accent-foreground px-6 py-2 uppercase text-sm font-bold">
           {title}
@@ -52,7 +52,6 @@ const SidebarSection = ({
 
       {showMoreButton && (
         <Button
-          size="lg"
           variant="ghost2"
           className="justify-start gap-6 p-2 pl-6 w-full"
           onClick={() => setShow(itemsList.length)}

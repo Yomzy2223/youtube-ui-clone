@@ -35,7 +35,7 @@ import {
   SubAvatarImg6,
   SubAvatarImg7,
 } from "@/assets/images";
-import { TSidebarItem, TSidebarSectionProps } from "./types";
+import { TSidebarFooter, TSidebarItem, TSidebarSectionProps } from "./types";
 
 // SIDEBAR SECTION 1 ITEMS LIST
 const sidebarSection1: TSidebarSectionProps = {
@@ -191,14 +191,37 @@ const sidebarSection5: TSidebarSectionProps = {
   ],
 };
 
+// SIDEBAR FOOTER SECTION 1
+const sidbarFooterLinks1: TSidebarFooter[] = [
+  { text: "About", url: "/" },
+  { text: "Press", url: "/" },
+  { text: "Copyright", url: "/" },
+  { text: "Contact us", url: "/" },
+  { text: "Creators", url: "/" },
+  { text: "Advertise", url: "/" },
+  { text: "Developers", url: "/" },
+];
+
+// SIDEBAR FOOTER SECTION 2
+const sidbarFooterLinks2: TSidebarFooter[] = [
+  { text: "Terms", url: "/" },
+  { text: "Privacy", url: "/" },
+  { text: "Policy & Safety", url: "/" },
+  { text: "How Youtube works", url: "/" },
+  { text: "Test new features", url: "/" },
+];
+
 // EXPORTS DESKTOP SIDEBAR SECTIONS
-export const sidebarItems: TSidebarSectionProps[] = [
+export const sidebarItems = [
   sidebarSection1,
   sidebarSection2,
   sidebarSection3,
   sidebarSection4,
   sidebarSection5,
 ];
+
+// EXPORTS DESKTOP SIDEBAR FOOTER LINKS
+export const sidbarFooterLinks = [sidbarFooterLinks1, sidbarFooterLinks2];
 
 // EXPORTS MOBILE SIDEBAR ITEMS
 export const mobileSidebarItems: TSidebarItem[] = [

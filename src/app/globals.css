@@ -77,18 +77,23 @@
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
-  display: none;
-  width: 0px;
+  visibility: hidden;
+  width: 10px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  visibility: hidden;
+  width: 10px;
 }
 
 .scrollbar-hidden:hover::-webkit-scrollbar {
-  display: block;
+  visibility: visible;
   width: 10px;
   background: #00000000;
 }
 
-.scrollbar-hidden::-webkit-scrollbar-thumb {
-  display: block;
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
   width: 10px;
   background: #303030;
   border-radius: 50px;
