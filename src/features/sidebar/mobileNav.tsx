@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import slugify from "slugify";
 import { mobileSidebarItems } from "./constants";
-import { TSidebarItem } from "./types";
 
 const MobileNav = () => {
   const pathname = usePathname();

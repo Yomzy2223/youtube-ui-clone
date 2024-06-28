@@ -3,6 +3,15 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
+type TProps = {
+  name: string;
+  Avatar: any;
+  comment: string;
+  liked: string;
+  disliked: string;
+  time: string;
+};
+
 const CommentCard = ({
   name,
   Avatar,
@@ -10,14 +19,7 @@ const CommentCard = ({
   liked,
   disliked,
   time,
-}: {
-  name: string;
-  Avatar: any;
-  comment: string;
-  liked: string;
-  disliked: string;
-  time: string;
-}) => {
+}: TProps) => {
   return (
     <div className="flex gap-4">
       <Button variant="ghost2" size="fit" className="shrink-0">
