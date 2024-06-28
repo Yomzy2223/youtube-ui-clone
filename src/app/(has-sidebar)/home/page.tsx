@@ -4,7 +4,7 @@ import ThunbnailCard from "@/components/cards/thumbnailCard";
 import DoChecks from "@/components/doChecks";
 import SubHeader from "@/features/header/subHeader";
 import { normalize } from "@/lib/utils";
-import { videosData } from "@/lib/videosData";
+import { videosMockData } from "@/lib/videosData";
 import { useSearchParams } from "next/navigation";
 import React from "react";
 
@@ -13,7 +13,7 @@ const Home = () => {
 
   const searchValue = normalize(searchParams.get("search") || "");
 
-  const filteredVideoData = videosData.filter(
+  const filteredVideoData = videosMockData.filter(
     (video) =>
       normalize(video.duration).includes(searchValue) ||
       normalize(video.fullName).includes(searchValue) ||
@@ -23,7 +23,7 @@ const Home = () => {
   );
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-full top-0 overflow-auto scrollbar-hidden">
       <SubHeader />
       <DoChecks
         items={filteredVideoData}

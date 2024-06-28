@@ -1,15 +1,16 @@
-import { Player } from "@/features/videoDetails";
+import { AllVideos, Comments, Player } from "@/features/videoDetails";
 import React from "react";
 
 const VideoDetails = ({ params }: { params: { title: string } }) => {
-  const title = params.title.split("-").join(" ");
-
   return (
-    <div className="flex">
-      <div className="flex-[1.2]">
-        <Player title={title} />
+    <div className="flex gap-6 bg-background-2 flex-1 px-[10%] py-6">
+      <div className="flex-[1.3]">
+        <Player title={params.title} />
+        <Comments />
       </div>
-      <div className="flex-1"></div>
+      <div className="flex-1">
+        <AllVideos />
+      </div>
     </div>
   );
 };

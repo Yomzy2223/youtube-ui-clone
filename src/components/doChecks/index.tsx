@@ -9,7 +9,6 @@ const DoChecks = ({
   children: ReactNode;
   className?: string;
 }) => {
-  console.log(items);
   if (items.length === 0)
     return (
       <div className="flex-1 flex justify-center items-center">

@@ -24,10 +24,7 @@ const ThunbnailCard = ({
   posted,
 }: TProps) => {
   return (
-    <Link
-      href={`/home/videos/${slugify(title.toLowerCase())}`}
-      className="group"
-    >
+    <Link href={`/videos/${slugify(title.toLowerCase())}`} className="group">
       <div className="relative mb-3 group-hover:ring-1 group-hover:ring-border">
         <Image
           src={thumbnail}

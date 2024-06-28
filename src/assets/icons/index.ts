@@ -43,6 +43,13 @@ import WatchLaterFillIcon from "./watch-later-fill.svg";
 import WatchLaterIcon from "./watch-later.svg";
 import YourVideosIcon from "./your-videos.svg";
 import InfoIcon from "./info.svg";
+import FullScreenIcon from "./fullscreen.svg";
+import HDIcon from "./hd.svg";
+import NextIcon from "./next.svg";
+import SoundIcon from "./sound.svg";
+import TheaterIcon from "./theater.svg";
+import TitlesIcon from "./titles.svg";
+import TVIcon from "./tv.svg";
 
 export {
   AppsIcon,
@@ -90,4 +97,11 @@ export {
   WatchLaterIcon,
   YourVideosIcon,
   InfoIcon,
+  FullScreenIcon,
+  HDIcon,
+  NextIcon,
+  SoundIcon,
+  TheaterIcon,
+  TitlesIcon,
+  TVIcon,
 };

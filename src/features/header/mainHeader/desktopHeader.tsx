@@ -8,10 +8,11 @@ import {
 } from "@/assets/icons";
 import { UserAvatar, YoutubeLogo } from "@/assets/images";
 import { Avatar } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useDeleteQuery, useSetQuery } from "@/hooks/queryHooks";
 import Image from "next/image";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React, { ChangeEvent } from "react";
 
@@ -30,20 +31,27 @@ const DesktopHeader = () => {
   return (
     <div className="hidden md:flex flex-1 justify-between items-center px-6">
       <div className="flex">
-        <Image
-          src={HamburgerIcon}
-          alt="menu"
-          width={24}
-          height={24}
-          className="mx-2"
-        />
-        <Image
-          src={YoutubeLogo}
-          alt="menu"
-          width={90}
-          height={20}
-          className="object-contain mx-4"
-        />
+        <Button size="fit" variant="ghost2" className="">
+          <Image
+            src={HamburgerIcon}
+            alt="menu"
+            width={24}
+            height={24}
+            className="mx-2"
+          />
+        </Button>
+        <Link
+          href="/"
+          className={buttonVariants({ size: "fit", variant: "ghost2" })}
+        >
+          <Image
+            src={YoutubeLogo}
+            alt="menu"
+            width={90}
+            height={20}
+            className="object-contain mx-4"
+          />
+        </Link>
       </div>
 
       <div className="flex">
