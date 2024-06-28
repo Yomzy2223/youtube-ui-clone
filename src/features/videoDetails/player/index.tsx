@@ -1,5 +1,6 @@
 import { InfoIcon } from "@/assets/icons";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { TVideoMockData, videosMockData } from "@/lib/videosData";
 import Image from "next/image";
 import React from "react";
@@ -7,14 +8,20 @@ import slugify from "slugify";
 import Analytics from "./analytics";
 import IconsSection from "./iconsSection";
 
-export const Player = ({ title }: { title: string }) => {
+export const Player = ({
+  title,
+  hideInfo,
+}: {
+  title: string;
+  hideInfo?: boolean;
+}) => {
   const videoData = videosMockData.find(
-    (v) => slugify(v.title.toLowerCase()) === title
+    (v) => slugify(v.title.toLowerCase()) === slugify(title.toLowerCase())
   ) as TVideoMockData;
 
   // WOULD HAVE USED VIDEO TAG IF THERE WAS A VIDEO
   return (
-    <div className="mr-3">
+    <div className="md:mr-3 ">
       <div className="relative cursor-pointer">
         <div className="flex justify-between px-4 py-3 absolute top-0 left-0 right-0 z-10">
           <span className="font-normal text-sm">{videoData.title}</span>
@@ -37,7 +44,7 @@ export const Player = ({ title }: { title: string }) => {
         </div>
       </div>
 
-      <div className="pt-5 pb-2">
+      <div className={cn("pt-5 pb-2", { hidden: hideInfo })}>
         <h2 className="font-normal text-base md:text-lg">{videoData.title}</h2>
         <div className="flex items-center justify-between gap-4 py-2">
           <div className="flex items-center gap-1 text-muted-foreground text-sm font-bold">

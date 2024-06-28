@@ -20,7 +20,7 @@ const Analytics = ({
   className?: string;
 }) => {
   const videoData = videosMockData.find(
-    (v) => slugify(v.title.toLowerCase()) === title
+    (v) => slugify(v.title.toLowerCase()) === slugify(title.toLowerCase())
   ) as TVideoMockData;
 
   const analytics = [

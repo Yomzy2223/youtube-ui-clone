@@ -1,7 +1,8 @@
+import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const LikedVideos = () => {
-  return <div>LikedVideos</div>;
+  return <ComingSoon pageTitle="Liked videos" />;
 };
 
 export default LikedVideos;

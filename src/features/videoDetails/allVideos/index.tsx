@@ -67,7 +67,7 @@ export const AllVideos = ({ title }: { title: string }) => {
             posted={video.posted}
             thumbnail={video.thumbnail}
             views={video.views}
-            small
+            variant2
           />
         ))}
       </DoChecks>

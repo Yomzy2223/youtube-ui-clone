@@ -1,7 +1,8 @@
+import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const WatchLater = () => {
-  return <div>WatchLater</div>;
+  return <ComingSoon pageTitle="Watch later" />;
 };
 
 export default WatchLater;

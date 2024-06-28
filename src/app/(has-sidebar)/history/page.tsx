@@ -1,7 +1,8 @@
+import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const History = () => {
-  return <div>History</div>;
+  return <ComingSoon pageTitle="History" />;
 };
 
 export default History;

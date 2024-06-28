@@ -1,7 +1,8 @@
+import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const Page = () => {
-  return <div>Page</div>;
+  return <ComingSoon pageTitle="Community" />;
 };
 
 export default Page;

@@ -1,7 +1,8 @@
+import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const Premium = () => {
-  return <div>Premium</div>;
+  return <ComingSoon pageTitle="Help" />;
 };
 
 export default Premium;

@@ -1,7 +1,8 @@
+import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const YourVideos = () => {
-  return <div>YourVideos</div>;
+  return <ComingSoon pageTitle="Your videos" />;
 };
 
 export default YourVideos;

@@ -1,7 +1,8 @@
+import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const Channels = () => {
-  return <div>Channels</div>;
+  return <ComingSoon pageTitle="Channels" />;
 };
 
 export default Channels;
