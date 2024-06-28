@@ -42,7 +42,7 @@ const Analytics = ({
           size="fit"
           className="p-1.5 gap-1.5 text-sm font-bold"
         >
-          <Image src={icons[i]} alt="like" width={20} height={18} />
+          {/* <Image src={icons[i]} alt="like" width={20} height={18} /> */}
           {el.text && <span>{el.text}</span>}
         </Button>
       ))}
