@@ -29,6 +29,7 @@ export type TVideoMockData = {
   views: string;
   posted: string;
   datePosted: string;
+  totalComments: string;
 };
 
 // VIDEOS MOCK DATA
@@ -47,6 +48,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "625",
     subscribers: "2.5M",
     datePosted: "Oct 8, 2021",
+    totalComments: "23",
   },
   {
     thumbnail: ThumbnailInstagram,
@@ -62,6 +64,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "157",
     subscribers: "1.8M",
     datePosted: "June 26, 2024",
+    totalComments: "424",
   },
   {
     thumbnail: ThumbnailTiktok,
@@ -77,6 +80,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "32",
     subscribers: "78k",
     datePosted: "June 24, 2024",
+    totalComments: "904",
   },
   {
     thumbnail: ThumbnailNetflix,
@@ -92,6 +96,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "1.4k",
     subscribers: "3.1M",
     datePosted: "May 27, 2024",
+    totalComments: "2k",
   },
   {
     thumbnail: ThumbnailTwitter,
@@ -107,6 +112,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "128",
     subscribers: "820k",
     datePosted: "June 27, 2024",
+    totalComments: "1.5k",
   },
   {
     thumbnail: ThumbnailSpotify,
@@ -122,6 +128,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "12",
     subscribers: "3.4k",
     datePosted: "June 20, 2024",
+    totalComments: "234",
   },
   {
     thumbnail: ThumbnailDiscord,
@@ -137,6 +144,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "72",
     subscribers: "450k",
     datePosted: "June 21, 2024",
+    totalComments: "534",
   },
   {
     thumbnail: ThumbnailYouTube,
@@ -152,6 +160,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "48",
     subscribers: "120k",
     datePosted: "April 24, 2024",
+    totalComments: "935",
   },
   {
     thumbnail: ThumbnailInstagram,
@@ -167,6 +176,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "97",
     subscribers: "1.5M",
     datePosted: "June 27, 2024",
+    totalComments: "98",
   },
   {
     thumbnail: ThumbnailTiktok,
@@ -182,6 +192,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "143",
     subscribers: "670k",
     datePosted: "June 26, 2024",
+    totalComments: "32",
   },
   {
     thumbnail: ThumbnailNetflix,
@@ -197,6 +208,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "214",
     subscribers: "420k",
     datePosted: "June 27, 2024",
+    totalComments: "3k",
   },
   {
     thumbnail: ThumbnailTwitter,
@@ -212,6 +224,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "278",
     subscribers: "1.1M",
     datePosted: "June 20, 2024",
+    totalComments: "455",
   },
   {
     thumbnail: ThumbnailSpotify,
@@ -227,6 +240,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "104",
     subscribers: "720k",
     datePosted: "June 25, 2024",
+    totalComments: "23",
   },
   {
     thumbnail: ThumbnailDiscord,
@@ -242,6 +256,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "91",
     subscribers: "210k",
     datePosted: "June 23, 2024",
+    totalComments: "543",
   },
   {
     thumbnail: ThumbnailYouTube,
@@ -257,6 +272,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "37",
     subscribers: "98k",
     datePosted: "June 6, 2024",
+    totalComments: "953",
   },
   {
     thumbnail: ThumbnailInstagram,
@@ -272,6 +288,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "134",
     subscribers: "1.8M",
     datePosted: "June 27, 2024",
+    totalComments: "5k",
   },
   {
     thumbnail: ThumbnailTiktok,
@@ -287,6 +304,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "87",
     subscribers: "520k",
     datePosted: "June 22, 2024",
+    totalComments: "2.3k",
   },
   {
     thumbnail: ThumbnailNetflix,
@@ -302,6 +320,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "71",
     subscribers: "340k",
     datePosted: "June 25, 2024",
+    totalComments: "243",
   },
   {
     thumbnail: ThumbnailTwitter,
@@ -317,6 +336,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "182",
     subscribers: "1.3M",
     datePosted: "June 27, 2024",
+    totalComments: "654",
   },
   {
     thumbnail: ThumbnailSpotify,
@@ -332,6 +352,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "102",
     subscribers: "270k",
     datePosted: "May 27, 2024",
+    totalComments: "653",
   },
   {
     thumbnail: ThumbnailDiscord,
@@ -347,6 +368,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "84",
     subscribers: "610k",
     datePosted: "May 30, 2024",
+    totalComments: "423",
   },
   {
     thumbnail: ThumbnailYouTube,
@@ -362,6 +384,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "51",
     subscribers: "150k",
     datePosted: "June 24, 2024",
+    totalComments: "657",
   },
   {
     thumbnail: ThumbnailInstagram,
@@ -377,6 +400,7 @@ export const videosMockData: TVideoMockData[] = [
     disliked: "178",
     subscribers: "910k",
     datePosted: "June 26, 2024",
+    totalComments: "858",
   },
 ];
 
@@ -384,97 +408,154 @@ export const videosMockData: TVideoMockData[] = [
 export const commentsMockData = [
   {
     name: "Sarah Lee",
+    avatar: SubAvatarImg1,
     time: "2 days ago",
     comment: "Great video! Very informative.",
+    liked: "32",
+    disliked: "10",
   },
   {
     name: "David Kim",
+    avatar: SubAvatarImg2,
     time: "1 hour ago",
     comment: "Hilarious! Can't wait for more.",
+    liked: "52",
+    disliked: "12",
   },
   {
     name: "Emily Johnson",
+    avatar: SubAvatarImg3,
     time: "3 weeks ago",
     comment: "Beautiful scenery, thanks for sharing!",
+    liked: "42",
+    disliked: "1",
   },
   {
     name: "Michael Brown",
+    avatar: SubAvatarImg4,
     time: "10 minutes ago",
     comment: "This is exactly what I needed, thanks!",
+    liked: "75",
+    disliked: "3",
   },
   {
     name: "Maria Garcia",
+    avatar: SubAvatarImg5,
     time: "yesterday",
     comment: "Subscribed! Keep up the good work.",
+    liked: "24",
+    disliked: "3",
   },
   {
     name: "Noah Williams",
+    avatar: SubAvatarImg6,
     time: "4 days ago",
     comment: "Confusing, needs better explanation.",
+    liked: "3k",
+    disliked: "100",
   },
   {
     name: "Olivia Jones",
+    avatar: SubAvatarImg7,
     time: "1 week ago",
     comment: "Interesting concept, will try it out!",
+    liked: "34",
+    disliked: "9",
   },
   {
     name: "William Miller",
+    avatar: SubAvatarImg1,
     time: "5 hours ago",
     comment: "Love the music, very relaxing.",
+    liked: "64",
+    disliked: "14",
   },
   {
     name: "Sophia Davis",
+    avatar: SubAvatarImg2,
     time: "12 hours ago",
     comment: "So cute! Made my day.",
+    liked: "11",
+    disliked: "0",
   },
   {
     name: "Daniel Hernandez",
+    avatar: SubAvatarImg3,
     time: "30 minutes ago",
     comment: "Really enjoyed this review, thanks.",
+    liked: "35",
+    disliked: "8",
   },
   {
     name: "Elizabeth Moore",
+    avatar: SubAvatarImg4,
     time: "21 hours ago",
     comment: "Inspiring! Feeling motivated.",
+    liked: "83",
+    disliked: "17",
   },
   {
     name: "Benjamin Lewis",
+    avatar: SubAvatarImg5,
     time: "6 days ago",
     comment: "A bit too long, could be shorter.",
+    liked: "34",
+    disliked: "1",
   },
   {
     name: "Isabella Garcia",
+    avatar: SubAvatarImg6,
     time: "8 days ago",
     comment: "Looking forward to the next part!",
+    liked: "93",
+    disliked: "13",
   },
   {
     name: "Matthew Robinson",
+    avatar: SubAvatarImg7,
     time: "1 day ago",
     comment: "Great tutorial, easy to follow.",
+    liked: "300",
+    disliked: "10",
   },
   {
     name: "Ashley Young",
+    avatar: SubAvatarImg1,
     time: "5 days ago",
     comment: "Disappointed, not what I expected.",
+    liked: "332",
+    disliked: "12",
   },
   {
     name: "Christopher Clark",
+    avatar: SubAvatarImg2,
     time: "2 hours ago",
     comment: "Learning so much, keep posting!",
+    liked: "320",
+    disliked: "19",
   },
   {
     name: "Catherine Walker",
+    avatar: SubAvatarImg3,
     time: "4 weeks ago",
     comment: "Needs more practice, but funny overall.",
+    liked: "43",
+    disliked: "7",
   },
   {
     name: "Jacob Allen",
+    avatar: SubAvatarImg4,
     time: "13 hours ago",
     comment: "Finally understand, thanks for explaining.",
+    liked: "92",
+    disliked: "9",
   },
   {
     name: "Abigail Thompson",
+    avatar: SubAvatarImg5,
     time: "7 days ago",
     comment: "Would recommend this to a friend.",
+    liked: "234",
+    disliked: "9",
   },
 ];

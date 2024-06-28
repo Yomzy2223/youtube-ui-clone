@@ -18,8 +18,6 @@ export const Player = ({ title }: { title: string }) => {
     (v) => slugify(v.title.toLowerCase()) === title
   ) as TVideoMockData;
 
-  console.log(videoData);
-
   const analytics = [
     { src: LikedIcon, text: videoData.liked, alt: "title" },
     { src: DisLikedIcon, text: videoData.disliked, alt: "hd" },
