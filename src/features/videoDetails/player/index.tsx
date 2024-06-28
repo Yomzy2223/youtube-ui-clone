@@ -21,7 +21,7 @@ export const Player = ({
 
   // WOULD HAVE USED VIDEO TAG IF THERE WAS A VIDEO
   return (
-    <div className="md:mr-3 ">
+    <div className="md:mr-3 sticky top-0">
       <div className="relative cursor-pointer">
         <div className="flex justify-between px-4 py-3 absolute top-0 left-0 right-0 z-10">
           <span className="font-normal text-sm">{videoData.title}</span>
@@ -41,20 +41,6 @@ export const Player = ({
             <div className="flex-[2] bg-[#EAEAEA33] h-0.5" />
           </div>
           <IconsSection />
-        </div>
-      </div>
-
-      <div className={cn("pt-5 pb-2", { hidden: hideInfo })}>
-        <h2 className="font-normal text-base md:text-lg">{videoData.title}</h2>
-        <div className="flex items-center justify-between gap-4 py-2">
-          <div className="flex items-center gap-1 text-muted-foreground text-sm font-bold">
-            <span>{videoData.views} views</span>
-            {" . "}
-            <span>{videoData.datePosted}</span>
-          </div>
-
-          {/* ANALYTICS FOR DESKTOP SCREEN */}
-          <Analytics title={title} className="hidden md:flex" />
         </div>
       </div>
     </div>
