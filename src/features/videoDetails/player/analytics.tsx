@@ -23,26 +23,24 @@ const Analytics = ({
     (v) => slugify(v.title.toLowerCase()) === slugify(title.toLowerCase())
   ) as TVideoMockData;
 
-  const icons = [LikedIcon, DisLikedIcon, ShareIcon, SaveIcon, MoreIcon];
-
   const analytics = [
-    { text: videoData.liked, alt: "title" },
-    { text: videoData.disliked, alt: "hd" },
-    { text: "SHARE", alt: "theatre" },
-    { text: "SAVE", alt: "tv" },
-    { alt: "more" },
+    { src: LikedIcon, text: videoData.liked, alt: "title" },
+    { src: DisLikedIcon, text: videoData.disliked, alt: "hd" },
+    { src: ShareIcon, text: "SHARE", alt: "theatre" },
+    { src: SaveIcon, text: "SAVE", alt: "tv" },
+    { src: MoreIcon, alt: "more" },
   ];
 
   return (
     <div className={cn("flex gap-2", className)}>
-      {analytics.map((el, i) => (
+      {analytics.map((el) => (
         <Button
           key={el.text}
           variant="ghost2"
           size="fit"
           className="p-1.5 gap-1.5 text-sm font-bold"
         >
-          {/* <Image src={icons[i]} alt="like" width={20} height={18} /> */}
+          <Image src={el.src} alt="like" width={20} height={18} />
           {el.text && <span>{el.text}</span>}
         </Button>
       ))}
