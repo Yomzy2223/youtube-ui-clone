@@ -19,6 +19,8 @@ const Home = () => {
       normalize(video.fullName).includes(searchValue) ||
       normalize(video.posted).includes(searchValue) ||
       normalize(video.title).includes(searchValue) ||
+      normalize(video.description).includes(searchValue) ||
+      normalize(video.totalComments).includes(searchValue) ||
       normalize(video.views).includes(searchValue)
   );
 

@@ -25,7 +25,7 @@ export const Comments = ({ title }: { title: string }) => {
   ) as TVideoMockData;
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 mr-3">
       <Introduction videoData={videoData} />
 
       {/* ANALYTICS FOR MOBILE SCREEN */}

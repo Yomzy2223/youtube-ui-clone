@@ -14,7 +14,7 @@ export const Player = ({ title }: { title: string }) => {
 
   // WOULD HAVE USED VIDEO TAG IF THERE WAS A VIDEO
   return (
-    <div>
+    <div className="mr-3">
       <div className="relative cursor-pointer">
         <div className="flex justify-between px-4 py-3 absolute top-0 left-0 right-0 z-10">
           <span className="font-normal text-sm">{videoData.title}</span>
