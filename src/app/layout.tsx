@@ -23,9 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(roboto.className, "max-w-[100vw] overflow-x-hidden")}>
+      <body
+        className={cn(
+          roboto.className,
+          "max-w-[100vw] h-screen overflow-x-hidden"
+        )}
+      >
         <AppHeader />
-        <div>{children}</div>
+        <div className="flex flex-col h-[calc(100vh-56px)]">{children}</div>
       </body>
     </html>
   );

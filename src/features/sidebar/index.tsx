@@ -15,8 +15,8 @@ import SidebarSection from "./sidebarSection";
 const Sidebar = () => {
   return (
     <>
-      {/* MOBILE SIDEBAR */}
-      <MobileNav itemsList={mobileSidebarItems} />
+      {/* MOBILE NAVIGATION BAR */}
+      <MobileNav />
 
       {/*DESKTOP SIDEBAR */}
       <div className="hidden md:block w-64 bg-background-3 max-h-[calc(100vh-56px)] overflow-auto scrollbar-hidden shrink-0">

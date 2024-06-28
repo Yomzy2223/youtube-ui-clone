@@ -1,20 +1,27 @@
 import { SearchIcon } from "@/assets/icons";
 import { UserAvatar, YoutubeLogo } from "@/assets/images";
 import { Avatar } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const MobileHeader = () => {
   return (
     <div className="flex md:hidden flex-1 items-center justify-between mx-4">
-      <Image
-        src={YoutubeLogo}
-        alt="menu"
-        width={90}
-        height={20}
-        className="object-contain"
-      />
+      <Link
+        href="/"
+        className={buttonVariants({ size: "fit", variant: "ghost2" })}
+      >
+        <Image
+          src={YoutubeLogo}
+          alt="menu"
+          width={90}
+          height={20}
+          className="object-contain"
+        />
+      </Link>
+
       <div className="flex items-center">
         <Button variant="ghost2" className="px-3">
           <Image
