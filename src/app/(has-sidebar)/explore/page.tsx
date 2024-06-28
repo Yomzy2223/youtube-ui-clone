@@ -2,7 +2,7 @@ import ComingSoon from "@/components/comingSoon";
 import React from "react";
 
 const Explore = () => {
-  return <ComingSoon pageTitle="Explore" />;
+  return <div></div>;
 };
 
 export default Explore;

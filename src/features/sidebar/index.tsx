@@ -1,14 +1,8 @@
-"use client";
-
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
-import {
-  mobileSidebarItems,
-  sidbarFooterLinks,
-  sidebarItems,
-} from "./constants";
+import { sidbarFooterLinks, sidebarItems } from "./constants";
 import MobileNav from "./mobileNav";
 import SidebarSection from "./sidebarSection";
 

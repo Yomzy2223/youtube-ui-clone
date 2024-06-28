@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowBottomIcon } from "@/assets/icons";
 import { Button } from "@/components/ui/button";
 import { cn, normalize } from "@/lib/utils";

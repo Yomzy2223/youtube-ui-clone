@@ -1,3 +1,5 @@
+"use client";
+
 import { AllVideos, Comments, Player } from "@/features/videoDetails";
 import React from "react";
 

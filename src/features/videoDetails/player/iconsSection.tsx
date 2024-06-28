@@ -37,7 +37,7 @@ const IconsSection = () => {
 
       <div className="flex items-center gap-4">
         {rightIcons?.map((icon) => (
-          <Button variant="ghost2" size="fit">
+          <Button key={icon.alt + icon.src} variant="ghost2" size="fit">
             <Image src={icon.src} alt={icon.alt} width={20} height={20} />
           </Button>
         ))}
