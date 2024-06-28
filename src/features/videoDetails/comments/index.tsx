@@ -5,6 +5,7 @@ import { SubAvatarImg1 } from "@/assets/images";
 import CommentCard from "@/components/cards/commentCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import {
   commentsMockData,
   TVideoMockData,
@@ -13,53 +14,45 @@ import {
 import Image from "next/image";
 import React, { useState } from "react";
 import slugify from "slugify";
+import Analytics from "../player/analytics";
+import Introduction from "./introduction";
 
 export const Comments = ({ title }: { title: string }) => {
-  const [fullDescription, setFullDescription] = useState(false);
+  const [openOnMobile, setOpenOnMobile] = useState(false);
 
   const videoData = videosMockData.find(
     (v) => slugify(v.title.toLowerCase()) === title
   ) as TVideoMockData;
 
-  const descriptionArr = videoData.description.split(".");
-
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex gap-4 py-4">
-        <Button variant="ghost2" size="fit" className=" shrink-0">
-          <Image
-            src={videoData.avatar}
-            alt={videoData.fullName}
-            className="w-8 h-8 md:w-12 md:h-12 object-contain"
-          />
-        </Button>
-        <div>
-          <div className="flex items-center justify-between gap-6 mb-3">
-            <div className="my-2">
-              <p className="text-sm font-normal">{videoData.fullName}</p>
-              <p className="text-xs text-muted-foreground font-normal">
-                {videoData.subscribers} subscribers
-              </p>
-            </div>
-            <Button>SUBSCRIBE</Button>
-          </div>
-          <p className="text-sm font-normal mb-2">
-            {fullDescription ? videoData.description : descriptionArr[0] + "."}
-          </p>
-          {descriptionArr.length > 1 && !fullDescription && (
-            <Button
-              variant="ghost2"
-              size="fit"
-              onClick={() => setFullDescription(true)}
-              className="text-muted-foreground"
-            >
-              SHOW MORE
-            </Button>
-          )}
-        </div>
-      </div>
+      <Introduction videoData={videoData} />
 
-      <div className="flex items-center gap-8 font-normal">
+      {/* ANALYTICS FOR MOBILE SCREEN */}
+      <Analytics title={title} className="md:hidden" />
+
+      {/* CLICKABLE COMMENT SUMMARY FOR MOBILE SCREEN */}
+      <Button
+        variant="ghost2"
+        size="fit"
+        className="flex-col justify-start items-start gap-1 shrink-0 bg-background-3 w-full p-3 md:hidden"
+        onClick={() => setOpenOnMobile(!openOnMobile)}
+      >
+        <p>Comments {commentsMockData?.length}</p>
+        <div className="flex items-center gap-2">
+          <Image
+            src={commentsMockData[0].avatar}
+            alt={commentsMockData[0].name}
+            width={24}
+            height={24}
+            className="object-contain"
+          />
+          <p className="text-xs font-normal">{commentsMockData[0].comment}</p>
+        </div>
+      </Button>
+
+      {/* COMMENT SUMMARY FOR DESKTOP SCREEN */}
+      <div className="hidden md:flex items-center gap-8 font-normal">
         <span>{videoData.totalComments} Comments </span>
         <Button variant="ghost2" size="fit" className="gap-2">
           <Image src={DropDownIcon} alt="thumbnail" width={22} height={22} />
@@ -67,7 +60,11 @@ export const Comments = ({ title }: { title: string }) => {
         </Button>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div
+        className={cn("hidden items-center gap-4 md:flex", {
+          flex: openOnMobile,
+        })}
+      >
         <Button variant="ghost2" size="fit" className="shrink-0">
           <Image
             src={SubAvatarImg1}
@@ -81,7 +78,11 @@ export const Comments = ({ title }: { title: string }) => {
         />
       </div>
 
-      <div className="flex flex-col gap-6 py-2">
+      <div
+        className={cn("hidden flex-col gap-6 py-2 md:flex", {
+          flex: openOnMobile,
+        })}
+      >
         {commentsMockData.map((c) => (
           <CommentCard
             key={c.name}
