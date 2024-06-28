@@ -43,18 +43,15 @@ const sidebarSection1: TSidebarSectionProps = {
     {
       text: "Home",
       imgSrc: [HomeIcon, HomeFillIcon],
-      href: "/home",
       default: true,
     },
     {
       text: "Explore",
       imgSrc: [ExploreIcon, ExploreFillIcon],
-      href: "/explore",
     },
     {
       text: "Subscriptions",
       imgSrc: [SubscriptionsIcon, SubscriptionsFillIcon],
-      href: "/subscriptions",
     },
   ],
 };
@@ -65,37 +62,30 @@ const sidebarSection2: TSidebarSectionProps = {
     {
       text: "Library",
       imgSrc: [LibraryIcon, LibraryFillIcon],
-      href: "/library",
     },
     {
       text: "History",
       imgSrc: [HistoryIcon, HistoryFillIcon],
-      href: "/history",
     },
     {
       text: "Your Videos",
       imgSrc: [YourVideosIcon, YourVideosIcon],
-      href: "/your-videos",
     },
     {
       text: "Watch Later",
       imgSrc: [WatchLaterIcon, WatchLaterFillIcon],
-      href: "/watch-later",
     },
     {
       text: "Liked Videos",
       imgSrc: [LikedIcon, LikedFillIcon],
-      href: "/liked-videos",
     },
     {
       text: "Settings",
       imgSrc: [SettingsIcon, SettingsIcon],
-      href: "/settings",
     },
     {
       text: "Reports",
       imgSrc: [ReportIcon, ReportFillIcon],
-      href: "/reports",
     },
   ],
   defaultShow: 5,
@@ -106,39 +96,32 @@ const sidebarSection3: TSidebarSectionProps = {
   title: "Subscriptions",
   itemsList: [
     {
-      text: "James Gouse",
-      imgSrc: [SubAvatarImg1],
-      href: "/subscriptions/james-gouse",
-    },
-    {
-      text: "Alan Cooper",
-      imgSrc: [SubAvatarImg2],
-      href: "/subscriptions/alan-cooper",
-    },
-    {
-      text: "Marcus Levin",
-      imgSrc: [SubAvatarImg3],
-      href: "/subscriptions/marcus-levin",
-    },
-    {
-      text: "Alexis Sears",
+      text: "Gamer X",
       imgSrc: [SubAvatarImg4],
-      href: "/subscriptions/alexis-sears",
     },
     {
-      text: "Jesica Lambert",
+      text: "Beauty Guru",
       imgSrc: [SubAvatarImg5],
-      href: "/subscriptions/jesica-lambert",
     },
     {
-      text: "Anna White",
+      text: "Tech Learner",
       imgSrc: [SubAvatarImg6],
-      href: "/subscriptions/anna-white",
     },
     {
-      text: "Skylar Dias",
+      text: "Doggo Lover",
       imgSrc: [SubAvatarImg7],
-      href: "/subscriptions/skylar-dias",
+    },
+    {
+      text: "Earth Advocate",
+      imgSrc: [SubAvatarImg1],
+    },
+    {
+      text: "Fitness Coach",
+      imgSrc: [SubAvatarImg2],
+    },
+    {
+      text: "Marie Kondo Fan",
+      imgSrc: [SubAvatarImg3],
     },
   ],
   defaultShow: 5,
@@ -151,17 +134,14 @@ const sidebarSection4: TSidebarSectionProps = {
     {
       text: "Youtube Premium",
       imgSrc: [PremiumIcon, PremiumFillIcon],
-      href: "premium",
     },
     {
       text: "Gaming",
       imgSrc: [GamingIcon, GamingFillIcon],
-      href: "/gaming",
     },
     {
       text: "Live",
       imgSrc: [LiveIcon, LiveFillIcon],
-      href: "/live",
     },
   ],
 };
@@ -172,22 +152,18 @@ const sidebarSection5: TSidebarSectionProps = {
     {
       text: "Settings",
       imgSrc: [SettingsIcon],
-      href: "/settings",
     },
     {
       text: "Report history",
       imgSrc: [ReportIcon, ReportFillIcon],
-      href: "/report-history",
     },
     {
       text: "Help",
       imgSrc: [HelpIcon],
-      href: "/help",
     },
     {
       text: "Send feedback",
       imgSrc: [FeedbackIcon],
-      href: "/feedback",
     },
   ],
 };
@@ -226,12 +202,11 @@ export const sidbarFooterLinks = [sidbarFooterLinks1, sidbarFooterLinks2];
 
 // EXPORTS MOBILE SIDEBAR ITEMS
 export const mobileSidebarItems: TSidebarItem[] = [
-  { text: "Home", imgSrc: [HomeIcon, HomeFillIcon], href: "/home" },
-  { text: "Explore", imgSrc: [ExploreIcon, ExploreFillIcon], href: "/explore" },
+  { text: "Home", imgSrc: [HomeIcon, HomeFillIcon] },
+  { text: "Explore", imgSrc: [ExploreIcon, ExploreFillIcon] },
   {
     text: "Subscriptions",
     imgSrc: [SubscriptionsIcon, SubscriptionsFillIcon],
-    href: "/subscriptions",
   },
-  { text: "Library", imgSrc: [LibraryIcon, LibraryFillIcon], href: "/library" },
+  { text: "Library", imgSrc: [LibraryIcon, LibraryFillIcon] },
 ];

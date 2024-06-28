@@ -1,7 +1,6 @@
 export type TSidebarItem = {
   text: string;
   imgSrc: any[];
-  href: string;
   default?: boolean;
 };
 

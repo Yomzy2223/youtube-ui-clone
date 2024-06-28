@@ -1,10 +1,11 @@
 import { ArrowBottomIcon } from "@/assets/icons";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { cn, normalize } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import slugify from "slugify";
 import { TSidebarSectionProps } from "./types";
 
 const SidebarSection = ({
@@ -26,15 +27,19 @@ const SidebarSection = ({
       )}
 
       {itemsList.slice(0, show).map((item, i) => {
+        let href = slugify(normalize(item.text));
+        if (title)
+          href =
+            slugify(normalize(title)) + "/" + slugify(normalize(item.text));
+        href = "/" + href;
+
         const pathActive =
-          pathname === "/" && item.default
-            ? true
-            : pathname.includes(item.href);
+          pathname === "/" && item.default ? true : pathname.includes(href);
 
         return (
           <Link
-            key={item.text + item.href}
-            href={item.href}
+            key={item.text + href}
+            href={href}
             className={cn("flex items-center gap-6 p-2 pl-6 transition-all", {
               "bg-muted": pathActive,
             })}

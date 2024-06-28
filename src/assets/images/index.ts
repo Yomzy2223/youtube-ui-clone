@@ -7,6 +7,7 @@ import SubAvatarImg5 from "./avatar/sub-avatar-5.png";
 import SubAvatarImg6 from "./avatar/sub-avatar-6.png";
 import SubAvatarImg7 from "./avatar/sub-avatar-7.png";
 import YoutubeLogo from "./youtube-logo.png";
+import ChannelCover from "./channel-cover.png";
 
 import ThumbnailDiscord from "./thumbnails/thumbnail-discord.png";
 import ThumbnailInstagram from "./thumbnails/thumbnail-instagram.png";
@@ -27,7 +28,6 @@ export {
   SubAvatarImg5,
   SubAvatarImg6,
   SubAvatarImg7,
-  YoutubeLogo,
 
   // THUMBNAILS
   ThumbnailDiscord,
@@ -38,4 +38,8 @@ export {
   ThumbnailTiktok,
   ThumbnailTwitter,
   ThumbnailYouTube,
+
+  //OTHERS
+  YoutubeLogo,
+  ChannelCover,
 };
